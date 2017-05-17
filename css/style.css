@@ -1,0 +1,99 @@
+/*!
+ * Start Bootstrap - Modern Business (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+nav {
+  border: none !important;
+  background-color: #000 !important;
+}
+
+nav ul > li {
+  font-size: 19px;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.header {
+  /*background: url('../img/wallpaper.jpg') no-repeat center center fixed;*/
+  background-color: #000;
+  opacity: 0.9;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: white;
+}
+
+header h1.heading {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 40px;
+  padding-top: 4.5em;
+  margin: 0;
+  opacity: 0.7;
+}
+
+header h2.subheading {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 75px;
+}
+
+a.btn-header{
+  margin-top: 1em;
+  margin-bottom: 5em;
+  border-radius: 30px;
+  border: 2px solid;
+  color: white;
+  font-size: 30px;
+}
+
+@media(max-width:767px) {
+  header h1, h2 {
+    margin: 0;
+  }
+  
+  header h1.heading {
+    font-size: 30px;
+  }
+  
+  header h2.subheading {
+    font-size: 50px;
+  }
+  
+  a.btn-header {
+    font-size: 25px;
+  }
+
+}
+
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+}
+
+
