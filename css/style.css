@@ -16,14 +16,22 @@ body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+p {
+  font-size: 16px;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
 nav {
   border: none !important;
   background-color: #000 !important;
+  opacity: 0.6;
 }
 
 nav ul > li {
   font-size: 19px;
-  font-family: 'Ubuntu Mono', monospace;
 }
 
 
@@ -38,14 +46,13 @@ nav ul > li {
 /* Home Page Carousel */
 
 header.header {
-  /*background: url('../img/wallpaper.jpg') no-repeat center center fixed;*/
-  background-color: #000;
-  opacity: 0.9;
+  background: url('../img/wallpaper.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   color: white;
+  opacity: 0.8;
 }
 
 header h1.heading {
@@ -89,11 +96,42 @@ a.btn-header{
 
 }
 
+h2.shoutout {
+  margin: 1em 0 1em 0;
+}
+
+hr.bold {
+  width: 35%;
+  text-align: center;
+  height: 1.9px;
+  border: none;
+  background-color: #333 !important;
+}
+
+i.text-primary {
+  color: #fff;
+}
+
+div.description {
+  font-weight: lighter;
+}
+
+
+section#joinus {
+  background: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;  
+  color: white;
+}
 
 /* Footer Styles */
 
 footer {
-    margin: 50px 0;
+    margin: 5em 0;
+    background-color: black;
+    color: white;
 }
 
 
