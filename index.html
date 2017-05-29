@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Intrusive </title>
+    <title>Intrusive</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -48,19 +48,22 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#intro">Who Are We?</a>
+                        <a data-scroll href="#intro">Who Are We?</a>
                     </li>
                     <li>
-                        <a href="#faq">FAQ</a>
+                        <a data-scroll href="#faq">FAQ</a>
                     </li>
                     <li>
-                        <a href="#join">Meet the Team</a>
+                        <a data-scroll href="#join">Meet the Team</a>
                     </li>
                     <li>
-                        <a href="#join">Join Us!</a>
+                        <a data-scroll href="#join">Join Us!</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a data-scroll href="#join">Sponsors</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -73,7 +76,7 @@
     <header class="header text-center">
       <h1 class="heading">Intrusive</h1>
       <h2 class="subheading">A NYC-based High School Cybersecurity Initiative</h1>
-      <a href="#intro" class="btn btn-primary-outline btn-header page-scroll">Wanna learn more?</a>
+      <a data-scroll href="#intro" class="btn btn-primary-outline btn-header page-scroll">Wanna learn more?</a>
     </header>
     
     <section id="intro">
@@ -81,6 +84,7 @@
       <div class="container">
           <div class="row text-center">
             <div class="col-lg-12">
+              <br />
               <hr class="bold" />
                 <h2 class="shoutout">Welcome! We are a cohort of white-hat high school developers, makers and hackers
                 hoping to build a <b>better</b> and <b> more secure</b> society through
@@ -149,15 +153,36 @@
         </div>
         <div class="row">
           <div class="col-lg-6 faq-row">
-            <h3>1. What does Intrusive exactly do?</h3>
+            <h3>What does Intrusive exactly do?</h3>
             <p>
               As a nonprofit cybersecurity group targeting high school students,
               we aim to bring awareness to the information security and penetration testing
-              fields within technology through open-sourced software, monthly gatherings and meetups,
+              fields within technology through open-sourced software, monthly conferences and meetups,
               starting CTF (Capture-the-Flag) competitions, writing and blogging, as well as recruiting 
               and meeting new AND experienced technologists!
             </p>
-            <h3>2. What is the story behind Intrusive?</h3>
+                        
+            <img class="img-responsive" src="img/img2.jpeg"/>
+            
+            <h3>What if I'm not from the New York City area? Can I still be a part of Intrusive?</h3>
+            <p>
+              Yes! While Intrusive is NYC-based at the moment, we want to expand our organization so that it reaches
+              all students around the world. While we currently host events within the Greater NYC area, we still hope to
+              make them accessible to you through social media, livestreaming, and a TBA Intrusive meetup platform for
+              hackers all around the world!
+            </p>
+            <h3>What about sponsors? How can my company/non-profit help Intrusive?</h3>
+            <p>
+              We love sponsors and we willing to accept any that want to help our cause in any way possible.
+              Please check the <a href="sponsors.html">Sponsors</a> section of our website, or email sponsors@intrusive.tech.
+            </p>
+            
+          </div>
+          <div class="col-lg-6 faq-row">
+            
+            <img class="img-responsive" src="img/img1.jpg" width="550px"/>
+            
+            <h3>What is the story behind Intrusive?</h3>
             <p>
               While there is a strong presence of opportunities for high school
               developers and hackers to shine and learn, there aren't many for those with interests in 
@@ -166,14 +191,16 @@
               and pick up some new skills for their future. We don't care about race, ethnicity or religion - 
               cybersecurity is for everyone.
             </p>
-            <h3>3. As a member of Intrusive, what are the things that I should do?</h3>
-            <p>
-              x 
-            </p>
+            
+            <img class="img-responsive" src="img/img3.jpg" width="550px"/>
+
+          
           </div>
         </div>
       </div>
     </section>
+    
+    <!--
     
     <section id="join">
       <div class="container">
@@ -188,16 +215,24 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
 
 
   
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    
+    <!-- jQuery smooth scroll -->
+    <script src="js/smooth-scroll.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+      smoothScroll.init();
+    </script>
+  
 
 </body>
 

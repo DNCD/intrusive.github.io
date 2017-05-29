@@ -20,6 +20,10 @@ p {
   font-size: 16px;
 }
 
+a {
+  color: #149b60;
+}
+
 section {
   margin-bottom: 2em;
 }
@@ -27,7 +31,7 @@ section {
 nav {
   border: none !important;
   background-color: #000 !important;
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 nav ul > li {
@@ -123,12 +127,24 @@ div.description {
 
 div.faq-row h3, div.faq-row p {
   font-family: 'Ubuntu Mono', monospace;
-  text-align: justify;
+}
+
+div.faq-row h3 {
+  font-size: 25px;
+  font-weight: bold;
 }
 
 div.faq-row p {
-  font-size: 16px;
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 5em;
   
+}
+
+img.img-responsive {
+  margin: 0 auto;
+  margin-bottom: 5em;
+
 }
 
 
