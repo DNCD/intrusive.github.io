@@ -116,8 +116,28 @@ div.description {
   font-weight: lighter;
 }
 
+.section-header {
+  font-weight: bold;
+  font-size: 300%;
+}
 
-section#joinus {
+div.faq-row h3, div.faq-row p {
+  font-family: 'Ubuntu Mono', monospace;
+  text-align: justify;
+}
+
+div.faq-row p {
+  font-size: 16px;
+  
+}
+
+
+section#faq {
+  background-color: #000;
+  color: white;
+}
+
+section#join {
   background: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
