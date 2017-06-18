@@ -12,6 +12,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+img {
+  margin-top: 1em !important;
+}
+
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
@@ -31,6 +35,7 @@ body {
 
 p {
   font-size: 16px;
+  text-align: justify;
 }
 
 a {
@@ -52,7 +57,7 @@ nav ul > li {
 }
 
 img.img-responsive {
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 @media(max-width:767px) {
@@ -233,10 +238,7 @@ ul.icons li > a:hover, a:active {
   opacity: 0.5;
 }
 
-ul.description li {
-  display: block;
-  text-align: justify;
-  margin: 1.5em 0;
+section#meetteam li > a {
+  color: #333 !important;
 }
-
 
