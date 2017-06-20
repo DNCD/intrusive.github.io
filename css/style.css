@@ -192,14 +192,23 @@ section#join {
     display: table;
     width: 100%;
     color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
     opacity: 0.9;
+    padding: 4em 0;
 }
 
+#mc_embed_signup {
+  color: #000;
+  border: 0;
+  clear: left; 
+  width: 100%;
+}
+
+#mc_embed_signup input {
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 0 !important;
+  border: none;
+  margin: 1em 0;
+}
 
 /* Footer Styles */
 
