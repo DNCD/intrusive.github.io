@@ -35,7 +35,6 @@ body {
 
 p {
   font-size: 16px;
-  text-align: justify;
 }
 
 a {
@@ -54,6 +53,16 @@ nav {
 
 nav ul > li {
   font-size: 19px;
+}
+
+ul > li {
+  font-size: 16px;
+}
+
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
 }
 
 img.img-responsive {

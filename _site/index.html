@@ -43,29 +43,21 @@
                  <span class="icon-bar"></span>
                  <span class="icon-bar"></span>
              </button>
-             <a class="navbar-brand" href="index.html">Home</a>
          </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a data-scroll href="index.html#intro">Who Are We?</a>
+                <li class="dropdown">
+                  <a href="/index" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a data-scroll href="/index#intro">Who are we?</a></li>
+                    <li><a data-scroll href="/index#faq">FAQ</a></li>
+                    <li><a data-scroll href="/index#join">Join Us!</a></li>
+                    <li><a data-scroll href="/index#sponsors">Sponsors</a></li>
+                  </ul>
                 </li>
-                <li>
-                    <a data-scroll href="index.html#faq">FAQ</a>
-                </li>
-                <li>
-                    <a data-scroll href="meetteam.html">Meet the Team</a>
-                </li>
-                <li>
-                    <a data-scroll href="index.html#join">Join Us!</a>
-                </li>
-                <li>
-                    <a data-scroll href="index.html#join">Sponsors</a>
-                </li>
-                <li>
-                    <a data-scroll href="#contact">Contact</a>
-                </li>
+                <li><a data-scroll href="/team" >Meet the Team</a></li>
+                <li><a data-scroll href="#contact">Contact</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -94,7 +86,6 @@
       <div class="row text-center">
         <div class="col-lg-12">
           <br />
-          <hr class="bold" />
             <h2 class="shoutout">Welcome! We are a cohort of white-hat high school developers, makers and hackers
             hoping to build a <b>better</b> and <b> more secure</b> society through
             our passions in cybersecurity and penetration testing.
@@ -220,7 +211,7 @@
     </div>
 </aside>
 
-<section id="sponsors">
+<!--<section id="sponsors">
   <div class="container">
     <div class="col-lg-12 text-center">
       <h3> Sponsors </h3>
@@ -229,13 +220,20 @@
       to <a href="mailto:sponsors@intrusive.tech">sponsors@intrusive.tech</a></i></h5>
     </div>
   </div>
-</section>
+</section>-->
 
   
   <footer class="footer text-center" id="contact">
-  <h2> Questions? Concerns? Comments? Talk to us! </h2>
-  <hr class="bold" style="background-color: white !important;"/>
-  <h4><b>General Inquiries:</b> hello@intrusive.tech</h4>
+  <div class="row">
+    <div class="col-md-12">
+      <h2> Questions? Concerns? Comments? Talk to us! </h2>
+      <hr class="bold" style="background-color: white !important;"/>
+      <h4><b>General Inquiries:</b> hello@intrusive.tech</h4>
+    </div>
+    <!-- blog / sitemap -->
+    <!-- once attained 501 (c) 3 nonprofit, make a section -->
+  </div>
+
   <ul class="icons">
     <li>
       <a href="#"><i class="fa fa-github fa-3x"></i></a>
@@ -249,7 +247,12 @@
     <li>
       <a href="#"><i class="fa fa-facebook fa-3x"></i></a>
     </li>
+    <li>
+      <a href="#"><i class="fa fa-instagram fa-3x"></i></a>
+    </li>
   </ul>
+  <br />
+  <h5 style="font-weight: lighter">© Copyright IntrusiveTech. All rights reserved </h5>
   
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
