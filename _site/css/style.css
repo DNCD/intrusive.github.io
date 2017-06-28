@@ -86,11 +86,12 @@ h1.heading {
 h2.subheading {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 75px;
+  padding-bottom: 1em;
 }
 
 a.btn-header{
   margin-top: 1em;
-  margin-bottom: 5em;
+  margin-bottom: 1em;
   border-radius: 30px;
   border: 2px solid;
   color: white;
@@ -246,7 +247,12 @@ ul.icons li > a:hover, a:active {
   opacity: 0.5;
 }
 
-section#meetteam li > a {
-  color: #333 !important;
+
+section#jointeam {
+  background-color: #f7f4f4;
 }
 
+section#jointeam h4 {
+  font-size: 20px;
+  line-height: 1.5em;
+}
