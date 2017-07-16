@@ -33,12 +33,12 @@ body {
     font-weight: 700;
 }
 
-p {
-  font-size: 16px;
+button.navbar-toggle {
+  border: 0;
 }
 
-a {
-  color: #149b60;
+p {
+  font-size: 16px;
 }
 
 section {
@@ -46,23 +46,37 @@ section {
 }
 
 nav {
-  border: none !important;
+  border: 0 !important;
   background-color: #000 !important;
-  opacity: 0.9;
 }
 
-nav ul > li {
+nav ul.nav > li {
+  margin-top: 1.5em;
   font-size: 19px;
+}
+
+nav ul.nav > li a {
+  color: #fff;
 }
 
 ul > li {
   font-size: 16px;
 }
 
+
+@media (max-width: 767px) {
+  nav ul > li {
+    margin-top: 0;
+  }
+}
+
 @media (min-width: 979px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
+    border: 0 !important;
+    border-top: 0;
   }
+
 }
 
 img.img-responsive {
@@ -85,8 +99,8 @@ h1.heading {
 
 h2.subheading {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 75px;
-  padding-bottom: 1em;
+  font-size: 70px;
+  padding-top: 1em;
 }
 
 a.btn-header{
@@ -98,7 +112,26 @@ a.btn-header{
   font-size: 30px;
 }
 
+header.header{
+  padding-top: 3em;
+  padding-bottom: 8em;
+  background-color: #000 !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  width: 100%;
+  color: white;
+  opacity: 0.9;
+}
+
+
 @media(max-width:767px) {
+  
+  header.header {
+    padding-top: 7em;
+  }
+  
   header h1, h2 {
     margin: 0;
   }
@@ -142,13 +175,9 @@ div.description {
   font-size: 300%;
 }
 
-div.faq-row h3, div.faq-row p {
-  font-family: 'Ubuntu Mono', monospace;
-}
 
 div.faq-row h3 {
   font-size: 25px;
-  font-weight: bold;
 }
 
 div.faq-row p {
@@ -164,11 +193,17 @@ img.img-responsive {
 
 }
 
-
 section#faq {
   background-color: #000;
   color: white;
 }
+
+.panel-default {
+  background-color: #333;
+  border-color: #333;
+}
+
+
 
 section#join {
   background: #000;

@@ -25,8 +25,7 @@
 
     <!-- Custom Fonts -->
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu+Mono" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
     
      
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -51,22 +50,17 @@
                  <span class="icon-bar"></span>
                  <span class="icon-bar"></span>
              </button>
+             <a href="/index"><img width="300px" src="img/Wallpaper.png" /></a>
          </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="nav">
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                  <a href="/" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a data-scroll href="/index#intro">Who are we?</a></li>
-                    <li><a data-scroll href="/index#faq">FAQ</a></li>
-                    <li><a data-scroll href="/index#join">Join Us!</a></li>
-                    <!--<li><a data-scroll href="/index#sponsors">Sponsors</a></li>-->
-                  </ul>
-                </li>
-                <li><a data-scroll href="/team" >Our Team</a></li>
-                <li><a data-scroll href="/programs" >Programs</a></li>
-                <li><a data-scroll href="/blog" >Blog</a></li>
+                <li><a data-scroll href="#intro">Who are we?</a></li>
+                <li><a data-scroll href="#faq">FAQ</a></li>
+                <li><a data-scroll href="#events" >Events</a></li>
+                <li><a data-scroll href="#join">Join Us!</a></li>
+                <li><a data-scroll href="#team" >Our Team</a></li>
+                <li><a data-scroll href="#sponsors" >Sponsors</a></li>
                 <li><a data-scroll href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -76,21 +70,10 @@
 </nav>
   
   <!-- Header Carousel -->
-<header class="header text-center" 
-    style="
-    background-color: #000 !important;
-    background: url('') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    width: 100%;
-    color: white;
-    opacity: 0.9">
-    
-  <img class="" width="150px" src="img/logo.png"/>
-  <h2 class="subheading">A NYC-based High School Cybersecurity Initiative</h1>
-  <a data-scroll href="#intro" class="btn btn-primary-outline btn-header page-scroll">Want to learn more?</a>
+<header class="header text-center" >
+  <div class="box">
+    <h2 class="subheading">A NYC-based High School Cybersecurity Initiative</h1>
+  </div>
 </header> 
   
   <section id="intro">
@@ -159,67 +142,92 @@
 <section id="faq">
   <div class="container">
     <div class="row">
+      <h2 class="text-center">Frequently Asked Questions</h2>
+      <hr class="bold" />
       <br />
-      <div class="col-lg-6 faq-row">
-        <h3>What exactly does Intrusive do?</h3>
-        <p>
-          As a nonprofit cybersecurity group targeting high school students,
-          we aim to bring awareness to the information security and penetration testing
-          fields through open-sourced software, conferences and meetups,
-          CTF (Capture-the-Flag) competitions, writing and blogging, as well as recruiting 
-          and meeting new AND experienced technologists! 
-        </p>
-      </div>
-      <div class="col-lg-6 faq-row">
-        <img class="img-responsive" src="img/img1.jpg" width="550px"/>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 faq-row">              
-          <img class="img-responsive" width="500px" src="img/img2.jpg"/>
-        </div>
-        <div class="col-lg-6 faq-row">    
-          <h3>What if I'm not from the New York City area? Can I still be a part of Intrusive?</h3>
-          <p>
-            Yes! While Intrusive is NYC-based at the moment, we want to expand our organization so that it reaches
-            all students around the world. While we currently host events within the Greater NYC area, we still hope to
-            make them accessible to you through social media, livestreaming, and a TBA Intrusive meetup platform for
-            hackers all around the world!
-          </p>          
+      <div class="col-md-12 faq-row">  
+        <div class="panel panel-default">
+          <div class="panel-title text-center" data-toggle="collapse" data-target="#faq1"><h3>What exactly does the organization do?</h3></div>
+           <div id="faq1" class="collapse">
+             <div class="panel-body">
+               <p>
+                 As a nonprofit cybersecurity group targeting high school students,
+                 we aim to bring awareness to the information security and penetration testing
+                 fields through open-sourced software, conferences and meetups,
+                 CTF (Capture-the-Flag) competitions, writing and blogging, as well as recruiting 
+                 and meeting new AND experienced technologists! 
+               </p>
+             </div>
+           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-6 faq-row">   
-          <h3>What is the story behind Intrusive?</h3>
-          <p>
-            While there is a strong presence of opportunities for high school
-            developers, there aren't many for those with interests in 
-            information security. Our goal ever since the beginning of the group's conception was to 
-            provide this opportunity to anybody wanting to learn more or dive into the field of cybersecurity,
-            and pick up some new skills for their future. We don't care about race, ethnicity or religion - 
-            cybersecurity is for everyone.
-          </p>
-        </div>
-        <div class="col-lg-6 faq-row">   
-          <img class="img-responsive" src="img/img3.jpg" width="550px"/>
+        <div class="col-md-12 faq-row">
+          <div class="panel panel-default">    
+            <div class="panel-title text-center" data-toggle="collapse" data-target="#faq2"><h3>What if I'm not from the New York City area? Can I still participate?</h3></div>
+              <div id="faq2" class="collapse">
+                <div class="panel-body">
+                  <p>
+                   Yes! While Intrusive is NYC-based at the moment, we want to expand our organization so that it reaches
+                   all students around the world. While we currently host events within the Greater NYC area, we still hope to
+                   make them accessible to you through social media, livestreaming, and a TBA Intrusive meetup platform for
+                   hackers all around the world!
+                </p>    
+              </div>
+            </div>        
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-6 faq-row">
-          <h3>What about sponsors? How can my company/non-profit help Intrusive?</h3>
-          <p>
-            We love sponsors and we willing to accept any that want to help our cause in any way possible.
-            Please check the <a href="#sponsors">Sponsors</a> section of our website, as well as email 
-            <a href="mailto:sponsors@intrusive.tech">sponsors@intrusive.tech</a>.
-          </p>    
+        <div class="col-md-12 faq-row">
+          <div class="panel panel-default">    
+          <div class="text-center" data-toggle="collapse" data-target="#faq3"><h3>What is the story behind Intrusive?</h3></div>
+            <div id="faq3" class="collapse">
+              <div class="panel-body">
+                <p>
+                    While there is a strong presence of opportunities for high school
+                    developers, there aren't many for those with interests in 
+                    information security. Our goal ever since the beginning of the group's conception was to 
+                    provide this opportunity to anybody wanting to learn more or dive into the field of cybersecurity,
+                    and pick up some new skills for their future. We don't care about race, ethnicity or religion - 
+                    cybersecurity is for everyone.
+                </p>
+              </div>
+            </div>        
+          </div>             
         </div>
-        <div class="col-lg-6 faq-row">
-          <h3>Where can I go to get more information?</h3>
-          <p>
-            We have a wonderful and dedicated team ready to help and provide more information anytime. 
-            Just shoot us an email at <a href="mailto:hello@intrusive.tech">hello@intrusive.tech</a>!
-          </p>
+      </div>
+      <div class="row">
+        <div class="col-md-12 faq-row">
+          <div class="panel panel-default">    
+            <div class="panel-title text-center" data-toggle="collapse" data-target="#faq4"><h3>What about sponsors? How can my company/non-profit help Intrusive?</h3></div>
+              <div id="faq4" class="collapse">
+                <div class="panel-body">
+                  <p>
+                      We love sponsors and we are willing to accept any that want to help our cause in any way possible.
+                      Please check the <a href="#sponsors">Sponsors</a> section of our website, as well as email 
+                      <a href="mailto:sponsors@intrusive.tech">sponsors@intrusive.tech</a>.
+                  </p>
+              </div>
+            </div>
+          </div>          
         </div>
-      </div>      
+      </div>
+      <div class="row">
+        <div class="col-md-12 faq-row">
+          <div class="panel panel-default">
+            <div class="panel-title text-center" data-toggle="collapse" data-target="#faq5"><h3>Where can I go to get more information?</h3></div>
+              <div id="faq5" class="collapse">
+                <div class="panel-body">
+                  <p>
+                    We have a wonderful and dedicated team ready to help and provide more information anytime. 
+                    Just shoot us an email at <a href="mailto:hello@intrusive.tech">hello@intrusive.tech</a>!
+                  </p>  
+              </div>
+            </div>   
+          </div>      
+        </div> 
+      </div>     
     </div>
   </div>
 </section>
@@ -260,10 +268,7 @@
     <div class="col-md-12">
       <h2> Questions? Concerns? Comments? Talk to us! </h2>
       <hr class="bold" style="background-color: white !important;"/>
-      <h4><b>General Inquiries:</b> hello@intrusive.tech</h4>
     </div>
-    <!-- blog / sitemap -->
-    <!-- once attained 501 (c) 3 nonprofit, make a section -->
   </div>
 
   <ul class="icons">
@@ -285,7 +290,6 @@
     </li>
   </ul>
   <br />
-  <h5 style="font-weight: lighter">© Copyright IntrusiveTech. All rights reserved </h5>
   
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
