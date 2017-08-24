@@ -1,6 +1,21 @@
 <!-- Header Carousel -->
-<header class="header text-center" >
+<header class="header text-center" style="
+padding-top: 3em;
+padding-bottom: 15em;
+{% if page.wallpaper %}
+  background: url('{{ page.wallpaper }}') no-repeat center center fixed;
+{% else %}
+  background-color: #000 !important;
+{% endif %}
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
+color: white;
+opacity: 0.85;
+">
   <div class="box">
-    <h2 class="subheading">{{ page.subheading }}</h1>
+    <h2 class="subheading">{{ page.subheading }}</h2>
+    {% if page.button %} <a data-scroll class="btn btn-lg" href="#intro"><h4>Learn more</h4></a>{% endif %}
   </div>
 </header> 

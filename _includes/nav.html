@@ -3,24 +3,37 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
-                 <span class="sr-only">Toggle navigation</span>
-                 <span class="icon-bar"></span>
-                 <span class="icon-bar"></span>
-                 <span class="icon-bar"></span>
-             </button>
-             <a href="/index"><img width="300px" src="img/Wallpaper.png" /></a>
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+           </button>
+           <a href="{{ site.baseurl }}/index"><img width="300px" src="img/header.png" /></a>
          </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="nav">
             <ul class="nav navbar-nav navbar-right">
-                <li><a data-scroll href="#intro">Who are we?</a></li>
-                <li><a data-scroll href="#faq">FAQ</a></li>
-                <li><a data-scroll href="#events" >Events</a></li>
-                <!--<li><a data-scroll href="#team" >Our Team</a></li>-->
-                <li><a data-scroll href="#join">Join Us!</a></li>
-                <!--<li><a data-scroll href="#sponsors" >Sponsors</a></li>-->
-                <li><a data-scroll href="#contact">Contact</a></li>
+              <li class="dropdown">
+                 <a class="dropdown-toggle" href="{{ site.baseurl }}/index">Home
+                 <span class="caret"></span></a>
+                 <ul class="dropdown-menu" id="dropdown-menu">
+                   <li><a data-scroll href="{{ site.baseurl }}/index#intro">Who are we?</a></li>
+                   <li><a data-scroll href="{{ site.baseurl }}/index#faq">FAQ</a></li>
+                   <li><a data-scroll href="{{ site.baseurl }}/index#join">Join Us!</a></li>
+                   <!--<li><a data-scroll href="#sponsors" >Sponsors</a></li>-->
+                 </ul>
+               </li>
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="{{ site.baseurl }}/programs">Programs
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="{{ site.baseurl }}/programs">Programs</a></li>
+                    <li><a href="{{ site.baseurl }}/meetups">intrusive.meetups()</a></li>
+                    <li><a data-scroll href="{{ site.baseurl }}/programs#opensource">intrusive <3 opensource</a></li>
+                  </ul>
+                </li>
+               <li><a data-scroll href="#contact">Contact</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

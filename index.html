@@ -1,7 +1,8 @@
 ---
 layout: default
+wallpaper: ../img/wallpaper.jpg
 subheading: A NYC-based High School Cybersecurity Initiative
-button: yes
+button: true
 ---
 
 <section id="intro">
@@ -17,10 +18,7 @@ button: yes
             <hr class="bold"  / >
         </div>
         <div class="col-lg-4">
-          <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-lightbulb-o fa-stack-1x text-primary"></i>
-          </span>
+          <h3><i class="large material-icons">lightbulb_outline</i></h3>
           <div class="description">
             <h3><b>Innovative</b></h3>
             <hr />
@@ -32,10 +30,7 @@ button: yes
           </div>
         </div>
         <div class="col-lg-4">
-          <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-users fa-stack-1x text-primary"></i>
-          </span>
+          <h3><i class="large material-icons">people_outline</i></h3>
           <div class="description">
             <h3><b>Progressive</b></h3>
             <hr />
@@ -48,10 +43,7 @@ button: yes
           </div>
         </div>
         <div class="col-lg-4">
-          <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-key fa-stack-1x text-primary"></i>
-          </span>
+          <h3><i class="large material-icons">memory</i></h3>
           <div class="description">
             <h3><b>Ethical</b></h3>
             <hr />
@@ -70,23 +62,25 @@ button: yes
 <section id="faq">
   <div class="container">
     <div class="row">
-      <h2 class="text-center">Frequently Asked Questions</h2>
+      <h1 class="text-center">Frequently Asked Questions</h1>
       <hr class="bold" />
       <br />
-      <div class="col-md-12 faq-row">  
-        <div class="panel panel-default">
-          <div class="panel-title text-center" data-toggle="collapse" data-target="#faq1"><h3>What exactly does the organization do?</h3></div>
-           <div id="faq1" class="collapse">
-             <div class="panel-body">
-               <p>
-                 As a nonprofit cybersecurity group targeting high school students,
-                 we aim to bring awareness to the information security and penetration testing
-                 fields through open-sourced software, conferences and meetups,
-                 CTF (Capture-the-Flag) competitions, writing and blogging, as well as recruiting 
-                 and meeting new AND experienced technologists! 
-               </p>
-             </div>
-           </div>
+      <div class="row">
+        <div class="col-md-12 faq-row">
+          <div class="panel panel-default">    
+            <div class="panel-title text-center" data-toggle="collapse" data-target="#faq1"><h3>What exactly does this organization do?</h3></div>
+              <div id="faq1" class="collapse">
+                <div class="panel-body">
+                  <p>
+                    As a nonprofit cybersecurity group targeting high school students,
+                    we aim to bring awareness to the information security and penetration testing
+                    fields through open-sourced software, conferences and meetups,
+                    CTF (Capture-the-Flag) competitions, writing and blogging, as well as recruiting 
+                    and meeting new AND experienced technologists! 
+                </p>    
+              </div>
+            </div>        
+          </div>
         </div>
       </div>
       <div class="row">
@@ -160,64 +154,20 @@ button: yes
   </div>
 </section>
 
-<section id="events">
-  <div class="container">
-    <h2 class="text-center">Events</h2>
-    <hr class="bold" />
-    <div class="row">
-      <div class="col-md-4">
-        <div class="panel-group">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h3 class="text-center">Intrusive Kickoff!</h3></div>
-            <div class="panel-body">
-              <img src="img/Wallpaper.png" class="img-responsive"/>
-              <p>Come to our first ever Intrusive event! This is a great
-                opportunity for students with an interest in cybersecurity to
-                come and get acquainted with our organization, what we will be
-                doing in our future, and get some insight into the world of 
-                cybersecurity!</p>
-              <p>
-                <b>Time: </b> 5:00PM - 7:00PM <br />
-                <b>Location: </b> New York, T.B.D. <br />
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="panel-group">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h3 class="text-center">intrusive.ctf()</h3></div>
-            <div class="panel-body">
-              <img src="img/Wallpaper.png" class="img-responsive"/>
-              <p>To Be Announced!</p>
-              <p><b>Time: </b> T.B.A <br />
-                <b>Location: </b> T.B.D. <br /></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- Callout -->
 <section class="callout" id="join">
-    <div class="text-center">
-      <h1>Interested in Intrusive?</h1>
-      <h3>Signup with our newsletter to hear about our events first!</h3>
-
-        <form id="mc_embed_signup" action="//tech.us16.list-manage.com/subscribe/post?u=377af29980e8f6d9d4b504082&amp;id=eb402f9cfd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div class="form-group col-lg-offset-3 col-lg-6 text-center">
-        	     <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="e.g example@gmail.com" required>
-               <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-               <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_377af29980e8f6d9d4b504082_eb402f9cfd" tabindex="-1" value=""></div>
-               <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-lg"></div>
-          </div>
-        </form>
-
-      <!--End mc_embed_signup-->
-    </div>
+  <div class="text-center">
+    <h1>Interested in Intrusive?</h1>
+    <h3>Signup with our newsletter to hear about our events first!</h3>
+    <form id="mc_embed_signup" action="//tech.us16.list-manage.com/subscribe/post?u=377af29980e8f6d9d4b504082&amp;id=eb402f9cfd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div class="form-group col-lg-offset-3 col-lg-6 text-center">
+  	     <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="e.g example@gmail.com" required>
+         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_377af29980e8f6d9d4b504082_eb402f9cfd" tabindex="-1" value=""></div>
+         <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-lg"></div>
+      </div>
+    </form>
+  </div>
 </section>
 
 <!--<section id="sponsors">

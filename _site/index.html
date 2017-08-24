@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,11 +22,15 @@
     <!-- Mailchimp Styles -->
     <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 
+    <!-- Custom Icons -->
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Custom Fonts -->
-    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> 
     
-     
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -44,24 +47,37 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
-                 <span class="sr-only">Toggle navigation</span>
-                 <span class="icon-bar"></span>
-                 <span class="icon-bar"></span>
-                 <span class="icon-bar"></span>
-             </button>
-             <a href="/index"><img width="300px" src="img/Wallpaper.png" /></a>
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+           </button>
+           <a href="/index"><img width="300px" src="img/header.png" /></a>
          </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="nav">
             <ul class="nav navbar-nav navbar-right">
-                <li><a data-scroll href="#intro">Who are we?</a></li>
-                <li><a data-scroll href="#faq">FAQ</a></li>
-                <li><a data-scroll href="#events" >Events</a></li>
-                <!--<li><a data-scroll href="#team" >Our Team</a></li>-->
-                <li><a data-scroll href="#join">Join Us!</a></li>
-                <!--<li><a data-scroll href="#sponsors" >Sponsors</a></li>-->
-                <li><a data-scroll href="#contact">Contact</a></li>
+              <li class="dropdown">
+                 <a class="dropdown-toggle" href="/index">Home
+                 <span class="caret"></span></a>
+                 <ul class="dropdown-menu" id="dropdown-menu">
+                   <li><a data-scroll href="/index#intro">Who are we?</a></li>
+                   <li><a data-scroll href="/index#faq">FAQ</a></li>
+                   <li><a data-scroll href="/index#join">Join Us!</a></li>
+                   <!--<li><a data-scroll href="#sponsors" >Sponsors</a></li>-->
+                 </ul>
+               </li>
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="/programs">Programs
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/programs">Programs</a></li>
+                    <li><a href="/meetups">intrusive.meetups()</a></li>
+                    <li><a data-scroll href="/programs#opensource">intrusive <3 opensource</a></li>
+                  </ul>
+                </li>
+               <li><a data-scroll href="#contact">Contact</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -70,9 +86,22 @@
 </nav>
   
   <!-- Header Carousel -->
-<header class="header text-center" >
+<header class="header text-center" style="
+padding-top: 3em;
+padding-bottom: 15em;
+
+  background: url('../img/wallpaper.jpg') no-repeat center center fixed;
+
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
+color: white;
+opacity: 0.85;
+">
   <div class="box">
-    <h2 class="subheading">A NYC-based High School Cybersecurity Initiative</h1>
+    <h2 class="subheading">A NYC-based High School Cybersecurity Initiative</h2>
+     <a data-scroll class="btn btn-lg" href="#intro"><h4>Learn more</h4></a>
   </div>
 </header> 
   
@@ -89,10 +118,7 @@
             <hr class="bold"  / >
         </div>
         <div class="col-lg-4">
-          <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-lightbulb-o fa-stack-1x text-primary"></i>
-          </span>
+          <h3><i class="large material-icons">lightbulb_outline</i></h3>
           <div class="description">
             <h3><b>Innovative</b></h3>
             <hr />
@@ -104,10 +130,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-users fa-stack-1x text-primary"></i>
-          </span>
+          <h3><i class="large material-icons">people_outline</i></h3>
           <div class="description">
             <h3><b>Progressive</b></h3>
             <hr />
@@ -120,10 +143,7 @@
           </div>
         </div>
         <div class="col-lg-4">
-          <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-key fa-stack-1x text-primary"></i>
-          </span>
+          <h3><i class="large material-icons">memory</i></h3>
           <div class="description">
             <h3><b>Ethical</b></h3>
             <hr />
@@ -142,23 +162,25 @@
 <section id="faq">
   <div class="container">
     <div class="row">
-      <h2 class="text-center">Frequently Asked Questions</h2>
+      <h1 class="text-center">Frequently Asked Questions</h1>
       <hr class="bold" />
       <br />
-      <div class="col-md-12 faq-row">  
-        <div class="panel panel-default">
-          <div class="panel-title text-center" data-toggle="collapse" data-target="#faq1"><h3>What exactly does the organization do?</h3></div>
-           <div id="faq1" class="collapse">
-             <div class="panel-body">
-               <p>
-                 As a nonprofit cybersecurity group targeting high school students,
-                 we aim to bring awareness to the information security and penetration testing
-                 fields through open-sourced software, conferences and meetups,
-                 CTF (Capture-the-Flag) competitions, writing and blogging, as well as recruiting 
-                 and meeting new AND experienced technologists! 
-               </p>
-             </div>
-           </div>
+      <div class="row">
+        <div class="col-md-12 faq-row">
+          <div class="panel panel-default">    
+            <div class="panel-title text-center" data-toggle="collapse" data-target="#faq1"><h3>What exactly does this organization do?</h3></div>
+              <div id="faq1" class="collapse">
+                <div class="panel-body">
+                  <p>
+                    As a nonprofit cybersecurity group targeting high school students,
+                    we aim to bring awareness to the information security and penetration testing
+                    fields through open-sourced software, conferences and meetups,
+                    CTF (Capture-the-Flag) competitions, writing and blogging, as well as recruiting 
+                    and meeting new AND experienced technologists! 
+                </p>    
+              </div>
+            </div>        
+          </div>
         </div>
       </div>
       <div class="row">
@@ -232,64 +254,20 @@
   </div>
 </section>
 
-<section id="events">
-  <div class="container">
-    <h2 class="text-center">Events</h2>
-    <hr class="bold" />
-    <div class="row">
-      <div class="col-md-4">
-        <div class="panel-group">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h3 class="text-center">Intrusive Kickoff!</h3></div>
-            <div class="panel-body">
-              <img src="img/Wallpaper.png" class="img-responsive"/>
-              <p>Come to our first ever Intrusive event! This is a great
-                opportunity for students with an interest in cybersecurity to
-                come and get acquainted with our organization, what we will be
-                doing in our future, and get some insight into the world of 
-                cybersecurity!</p>
-              <p>
-                <b>Time: </b> 5:00PM - 7:00PM <br />
-                <b>Location: </b> New York, T.B.D. <br />
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="panel-group">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h3 class="text-center">intrusive.ctf()</h3></div>
-            <div class="panel-body">
-              <img src="img/Wallpaper.png" class="img-responsive"/>
-              <p>To Be Announced!</p>
-              <p><b>Time: </b> T.B.A <br />
-                <b>Location: </b> T.B.D. <br /></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- Callout -->
 <section class="callout" id="join">
-    <div class="text-center">
-      <h1>Interested in Intrusive?</h1>
-      <h3>Signup with our newsletter to hear about our events first!</h3>
-
-        <form id="mc_embed_signup" action="//tech.us16.list-manage.com/subscribe/post?u=377af29980e8f6d9d4b504082&amp;id=eb402f9cfd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div class="form-group col-lg-offset-3 col-lg-6 text-center">
-        	     <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="e.g example@gmail.com" required>
-               <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-               <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_377af29980e8f6d9d4b504082_eb402f9cfd" tabindex="-1" value=""></div>
-               <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-lg"></div>
-          </div>
-        </form>
-
-      <!--End mc_embed_signup-->
-    </div>
+  <div class="text-center">
+    <h1>Interested in Intrusive?</h1>
+    <h3>Signup with our newsletter to hear about our events first!</h3>
+    <form id="mc_embed_signup" action="//tech.us16.list-manage.com/subscribe/post?u=377af29980e8f6d9d4b504082&amp;id=eb402f9cfd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div class="form-group col-lg-offset-3 col-lg-6 text-center">
+  	     <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="e.g example@gmail.com" required>
+         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_377af29980e8f6d9d4b504082_eb402f9cfd" tabindex="-1" value=""></div>
+         <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-lg"></div>
+      </div>
+    </form>
+  </div>
 </section>
 
 <!--<section id="sponsors">
@@ -315,22 +293,46 @@
   <ul class="icons">
 
     <li>
-      <a href="https://github.com/intrusive"><i class="fa fa-github fa-3x"></i></a>
+      <a href="https://github.com/intrusive"><i class="fa fa-github fa-2x"></i></a>
     </li>
     <li>
-      <a href="mailto:hello@intrusive.tech"><i class="fa fa-paper-plane fa-3x"></i></a>
+      <a href="mailto:hello@intrusive.tech"><i class="fa fa-paper-plane fa-2x"></i></a>
     </li>
     <li>
-      <a href="https://twitter.com/intrusivetech/"><i class="fa fa-twitter fa-3x"></i></a>
+      <a href="https://twitter.com/intrusivetech/"><i class="fa fa-twitter fa-2x"></i></a>
     </li>
     <li>
-      <a href="https://facebook.com/intrusivetech"><i class="fa fa-facebook fa-3x"></i></a>
+      <a href="https://facebook.com/intrusivetech"><i class="fa fa-facebook fa-2x"></i></a>
     </li>
-    <li>
-      <a href="https://instagram.com/intrusivetech"><i class="fa fa-instagram fa-3x"></i></a>
-    </li>
-  </ul>
-  <br />
+  </ul>  
+  <br style="margin-bottom: 2em;"/>
+  
+  <div class="row">
+    <div class="col-md-4">
+      <h3>Intrusive is a student-run organization.</h3>
+      <p>
+        We are dedicated to providing cybersecurity education and awareness to students in the
+        New York City area, regardless of race, gender, ethnicity, and socioeconomic background.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4><b>Sitemap</b></h4>
+      <ul class="sitemap vertical-align">
+        <li><a href="/">Home</a>
+        </li>
+        <li><a href="/programs">Programs</a>
+        </li>
+        <li><a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h4><b>Blog</b></h4>
+      <p>
+        Coming soon!
+      </p>
+    </div>
+  </div>
   
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
