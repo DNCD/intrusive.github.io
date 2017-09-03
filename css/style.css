@@ -11,8 +11,6 @@ i.large {
   font-size: 50px;
 }
 
-
-
 a.btn {
   margin-top: 2.5em;
   border-radius: 5em;
@@ -220,6 +218,23 @@ img.img-responsive {
 
 }
 
+section#meetup-callout {
+  background-color: #333;
+  color: #fff;
+}
+section#meetup-callout h4, h3 {
+  line-height: 1.75;
+}
+
+h2#clock {
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 55px;
+}
+
+section#meetup-callout h1 {
+  font-size: 40px;
+}
+
 section#faq {
   background-color: #000;
   color: white;
@@ -228,9 +243,6 @@ section#faq {
 section#faq .panel-default {
   background-color: #333;
   border-color: #333;
-}
-section#programs {
-
 }
 
 section#join {
